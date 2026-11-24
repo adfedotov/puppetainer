@@ -1,0 +1,9 @@
+services:
+  puppetainer:
+    build: .
+    image: puppetainer:latest
+    container_name: puppetainer
+    runtime: runsc
+    network_mode: none
+    init: true
+    restart: unless-stopped
